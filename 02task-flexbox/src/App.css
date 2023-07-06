@@ -1,0 +1,28 @@
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+}
+
+.flex-container {
+    height: 300px;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container div {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #daa520;
+}
+
+.flex-container div:nth-child(2n) {
+    align-self: center;
+}
+
+.flex-container div:nth-child(3) {
+    align-self: flex-end;
+}

@@ -1,0 +1,30 @@
+@import './../../../style/Vars.scss';
+@import './../../../style/hoverEffects.scss';
+
+.containerLink {
+    display: flex;
+    @extend .hoverEffectOpacity;
+    &:hover {
+        background-color: $colorGreenDim;
+    }
+}
+
+.link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 24px;
+    z-index: 50;
+    height: 40px;
+}
+
+.img {
+    height: 25px;
+    width: 25px;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 600;
+}

@@ -1,0 +1,22 @@
+index.html:
+    Изменил загрузку скриптов:
+    `<script defer src="contacts.js"></script>`
+    `<script defer src="stats.js"></script>`
+    Скрипты будут загружены параллельно HTML и запущен после полной загрузки страницы
+
+contacts.js: 
+    1. `const items = contacts.getElementsByClassName("contact");`
+    В самом начале скрипта получаю динамическую HTML коллекцию контактов 
+    (делаю это один раз, чтобы потом не делать это каждый раз)
+
+    2.
+    `contacts.addEventListener("scroll", (e) => {
+        const topItemIndex = Math.round(contacts.scrollTop / 20);
+        stickyHeader.textContent = items[topItemIndex].textContent;
+    });`
+    Изменяю обработчик: делю длину скрола на высоту элементов и получаю индекс необходимого элемента
+    (получаю алгоритм О(1))
+
+styles.css :
+    1. изменю height .contact на 20px для работы алгоритма.
+    2. изменю scroll-padding .contacts на 20px, чтобы соответствовало высоте .contact

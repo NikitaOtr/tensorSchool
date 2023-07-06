@@ -1,0 +1,29 @@
+@import './../../../../../style/Vars.scss';
+
+.mix {
+    display: flex;
+    &__link {
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 80px;
+        background-color: $colorItemBackground;
+        border-radius: 10px;
+        flex: 1;
+        &:hover {
+            background-color: $colorhoverItemBackground;
+        }
+    }
+    &__img {
+        border-radius: 10px 0 0 10px;
+        height: 100%;
+        width: 80px;
+    }
+    &__boxText {
+        &__text {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}

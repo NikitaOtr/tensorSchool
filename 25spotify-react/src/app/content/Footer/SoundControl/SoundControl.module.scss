@@ -1,0 +1,25 @@
+@import './../../../style/hoverEffects.scss';
+
+.sound {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    width: 300px;
+}
+
+.button {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    &__img {
+        transition: all 0.2s;
+        height: 30px;
+    }
+    @extend .hoverEffectOpacity;
+    &:active {
+        .button__img {
+            height: 27px;
+        }
+    }
+}

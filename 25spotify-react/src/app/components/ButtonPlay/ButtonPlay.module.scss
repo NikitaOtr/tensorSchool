@@ -1,0 +1,60 @@
+@import './../../style/Vars.scss';
+@import './../../style/hoverEffects.scss';
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: $colorWhite;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: inherit;
+    @extend .hoverEffectOpacity;
+    &:hover {
+        border-color: $colorGreen;
+        .play {
+             border-left-color: $colorGreen;
+        }
+        .pause {
+             &:before, &:after {
+                 background-color: $colorGreen;
+             }
+        }
+    }
+}
+
+.play {
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: $colorWhite;
+    border-right: none;
+    transition: all linear .2s;
+    :hover {
+        border-left-color: $colorGreen;
+    } 
+}
+
+.pause {
+    position: relative;
+    background: none;
+    border: none;
+    transition: all linear .2s;
+    &:before, &:after {
+        transition: 0.3s;
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 33%;
+        background: $colorWhite;
+    }
+    &:before {
+        left: 0;
+    }
+    &:after {
+        right: 0;
+    }
+}

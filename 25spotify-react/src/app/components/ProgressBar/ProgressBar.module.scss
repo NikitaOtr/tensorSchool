@@ -1,0 +1,61 @@
+@import './../.././style/Vars.scss';
+
+.container {
+    background-color: gray; 
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+     &:hover {
+        background-color: $colorWhite;
+        .thumb {
+           display: block;
+        }
+        .progress {
+           background-color: $colorGreen;
+        }
+    }
+}
+
+.range {
+    -webkit-appearance: none;
+    cursor: pointer;
+    height: 4px;
+    opacity: 0;
+    margin: 0 auto;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.thumb {
+    transition: all .1s;
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: $colorGreen;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    pointer-events: none;
+    user-select: none;
+}
+
+.progress {
+    transition: all .1s;
+    background-color: $colorWhite;
+    width: 50%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+    pointer-events: none;
+}

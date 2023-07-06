@@ -1,0 +1,72 @@
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    grid-column: 1/2;
+    background-color: black;
+    &__line {
+        height: 2px;
+        width: 200px;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, .3);
+    }
+}
+
+.container-link {
+    display: flex;
+    &__link {
+        flex: 1;
+        padding: 0 24px;
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+.logo {
+    padding: 15px 0;    
+}
+
+.navigation {
+    &__link {
+        height: 40px;
+    }
+    &__img {
+        height: 25px;
+        width: 25px;
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.aside-options {
+    &__link {
+        height: 35px;
+    }
+    &__img {
+        height: 20px;
+        width: 20px;
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.playlists {
+     &__link {
+        height: 30px;
+    }
+    &__text {
+        width: 202px;
+        font-size: 14px;
+        font-weight: 300;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

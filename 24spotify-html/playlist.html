@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/index.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="history">
+                    <button class="history__button button-back hover-effect"></button>
+                    <button class="history__button button-up hover-effect"></button>
+                </div>
+                <div class="user">
+                    <button class="user__button hover-effect">
+                        <img class="user__button__img" src="./images/header/user.svg" alt="Аватар пользователя">
+                        <span class="user__button__text">Никита</span>
+                    </button>
+                </div>
+            </header>
+            
+            <aside class="aside">
+                <div class="container-link logo">
+                    <a class="container-link__link" href="./index.html">
+                        <img src="./images/Logo/LogoSpotify.svg" alt="Логотип">
+                    </a>
+                </div>
+            
+                <nav class="navigation">
+                    <div class="container-link hover-effect">
+                        <a class="container-link__link navigation__link" href="./index.html">
+                            <img class="navigation__img" src="./images/aside/home.svg" alt="Домик">
+                            <span class="navigation__text">Главная</span>
+                        </a>
+                    </div>
+            
+                    <div class="container-link hover-effect">
+                        <a class="container-link__link navigation__link" href="./cerch.html">
+                            <img class="navigation__img" src="./images/aside/search.svg" alt="Лупа">
+                            <span class="navigation__text">Поиск</span>
+                        </a>
+                    </div>
+            
+                    <div class="container-link hover-effect">
+                        <a class="container-link__link navigation__link" href="./collectionsItems.html">
+                            <img class="navigation__img" src="./images/aside/book.svg" alt="Медиатека">
+                            <span class="navigation__text">Медиатека</span>
+                        </a>
+                    </div>
+                </nav>
+            
+                <div class="aside-options">
+                    <div class="container-link hover-effect">
+                        <a class="container-link__link aside-options__link" href="./collectionsItems.html">
+                            <img class="aside-options__img" src="./images/aside/add.svg" alt="Плюсик">
+                            <span class="aside-options__text">Создать плейлист</span>
+                        </a>
+                    </div>
+            
+                    <div class="container-link hover-effect">
+                        <a class="container-link__link aside-options__link" href="./playlist.html">
+                            <img class="aside-options__img" src="./images/aside/heart.svg" alt="Сердечко">
+                            <span class="aside-options__text">Любимые треки</span>
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="aside__line"></div>
+            
+                <div class="playlists">
+                    <div class="container-link hover-effect">
+                        <a class="container-link__link playlists__link" href="./playlist.html">
+                            <span class="playlists__text">Плейлист для прослушивания длинный</span>
+                        </a>
+                    </div>
+            
+                    <div class="container-link hover-effect">
+                        <a class="container-link__link playlists__link" href="./playlist.html">
+                            <span class="playlists__text">Плейлист №2</span>
+                        </a>
+                    </div>
+            
+                    <div class="container-link hover-effect">
+                        <a class="container-link__link playlists__link" href="./playlist.html">
+                            <span class="playlists__text">Плейлист №3</span>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="main">
+                <div class="play-list-title">
+                    <div class="play-list-title__box-img">
+                        <img class="play-list-title__box-img__img" src="./images/aside/heart.svg" alt="">
+                    </div>
+                    <div class="play-list-title__box-text">
+                        <h1 class="play-list-title__box-text__name">Любимые треки</h1>
+                        <span class="play-list-title__box-text__count">Количество треков: 172</span>
+                    </div>
+                </div>
+
+                <div class="play-list-btn-play">
+                    <button class="play-list-btn-play__btn">
+                        <img class="play-list-btn-play__btn__img" src="./images/greenBtn.svg" alt="">
+                    </button>
+                </div>
+
+                <section class="play-list">
+                    <div class="play-list__header box">
+                        <div class="play-list__header__box box__item">
+                            <span class="play-list__header__box__text">№</span>
+                        </div>
+
+                        <div class="play-list__header__box box__item">
+                            <span class="play-list__header__box__text">Название</span>
+                        </div>
+
+                        <div class="play-list__header__box box__item">
+                            <span class="play-list__header__box__text">Альбом</span>
+                        </div>
+
+                        <div class="play-list__header__box box__item">
+                            <img class="play-list__header__box__img" src="./images/playlist/time.svg" alt="">
+                        </div>
+                    </div>
+
+                    <article class="song">
+                        <div class="song__box">
+                            <span class="song__box__text">1</span>
+                        </div>
+
+                        <div class="song__box">
+                            <div>
+                                <img class="song__box__img" src="./images/playerAvatar" alt="">
+                            </div>
+                            <div class="song__box__title">
+                                <span class="song__box__text">Пусть в кайф afasdfafasfasfdads</span>
+                                <div class="song__box__autors">
+                                    <a class="song__box__autors__autor">Юность</a>
+                                    <a class="song__box__autors__autor">Юность</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="song__box">
+                            <span class="song__box__text">Пусть в кайф asdfadfaffadfasdfasf</span>
+                        </div>
+                        
+                        <div class="song__box">
+                            <span class="song__box__text">113:04</span>
+                        </div>
+                    </article>
+
+                    <article class="song">
+                        <div class="song__box">
+                            <span class="song__box__text">1</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <div>
+                                <img class="song__box__img" src="./images/playerAvatar" alt="">
+                            </div>
+                            <div class="song__box__title">
+                                <span class="song__box__text">Пусть в кайф afasdfafasfasfdads</span>
+                                <div class="song__box__autors">
+                                    <a class="song__box__autors__autor">Юность</a>
+                                    <a class="song__box__autors__autor">Юность</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">Пусть в кайф asdfadfaffadfasdfasf</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">113:04</span>
+                        </div>
+                    </article>
+
+                    <article class="song">
+                        <div class="song__box">
+                            <span class="song__box__text">1</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <div>
+                                <img class="song__box__img" src="./images/playerAvatar" alt="">
+                            </div>
+                            <div class="song__box__title">
+                                <span class="song__box__text">Пусть в кайф afasdfafasfasfdads</span>
+                                <div class="song__box__autors">
+                                    <a class="song__box__autors__autor">Юность</a>
+                                    <a class="song__box__autors__autor">Юность</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">Пусть в кайф asdfadfaffadfasdfasf</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">113:04</span>
+                        </div>
+                    </article>
+
+                    <article class="song">
+                        <div class="song__box">
+                            <span class="song__box__text">1</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <div>
+                                <img class="song__box__img" src="./images/playerAvatar" alt="">
+                            </div>
+                            <div class="song__box__title">
+                                <span class="song__box__text">Пусть в кайф afasdfafasfasfdads</span>
+                                <div class="song__box__autors">
+                                    <a class="song__box__autors__autor">Юность</a>
+                                    <a class="song__box__autors__autor">Юность</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">Пусть в кайф asdfadfaffadfasdfasf</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">113:04</span>
+                        </div>
+                    </article>
+
+                    <article class="song">
+                        <div class="song__box">
+                            <span class="song__box__text">1</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <div>
+                                <img class="song__box__img" src="./images/playerAvatar" alt="">
+                            </div>
+                            <div class="song__box__title">
+                                <span class="song__box__text">Пусть в кайф afasdfafasfasfdads</span>
+                                <div class="song__box__autors">
+                                    <a class="song__box__autors__autor">Юность</a>
+                                    <a class="song__box__autors__autor">Юность</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">Пусть в кайф asdfadfaffadfasdfasf</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">113:04</span>
+                        </div>
+                    </article>
+
+                    <article class="song">
+                        <div class="song__box">
+                            <span class="song__box__text">1</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <div>
+                                <img class="song__box__img" src="./images/playerAvatar" alt="">
+                            </div>
+                            <div class="song__box__title">
+                                <span class="song__box__text">Пусть в кайф afasdfafasfasfdads</span>
+                                <div class="song__box__autors">
+                                    <a class="song__box__autors__autor">Юность</a>
+                                    <a class="song__box__autors__autor">Юность</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">Пусть в кайф asdfadfaffadfasdfasf</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">113:04</span>
+                        </div>
+                    </article>
+
+                    <article class="song">
+                        <div class="song__box">
+                            <span class="song__box__text">1</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <div>
+                                <img class="song__box__img" src="./images/playerAvatar" alt="">
+                            </div>
+                            <div class="song__box__title">
+                                <span class="song__box__text">Пусть в кайф afasdfafasfasfdads</span>
+                                <div class="song__box__autors">
+                                    <a class="song__box__autors__autor">Юность</a>
+                                    <a class="song__box__autors__autor">Юность</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">Пусть в кайф asdfadfaffadfasdfasf</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">113:04</span>
+                        </div>
+                    </article>
+
+                    <article class="song">
+                        <div class="song__box">
+                            <span class="song__box__text">1</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <div>
+                                <img class="song__box__img" src="./images/playerAvatar" alt="">
+                            </div>
+                            <div class="song__box__title">
+                                <span class="song__box__text">Пусть в кайф afasdfafasfasfdads</span>
+                                <div class="song__box__autors">
+                                    <a class="song__box__autors__autor">Юность</a>
+                                    <a class="song__box__autors__autor">Юность</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">Пусть в кайф asdfadfaffadfasdfasf</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">113:04</span>
+                        </div>
+                    </article>
+
+                    <article class="song">
+                        <div class="song__box">
+                            <span class="song__box__text">1</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <div>
+                                <img class="song__box__img" src="./images/playerAvatar" alt="">
+                            </div>
+                            <div class="song__box__title">
+                                <span class="song__box__text">Пусть в кайф afasdfafasfasfdads</span>
+                                <div class="song__box__autors">
+                                    <a class="song__box__autors__autor">Юность</a>
+                                    <a class="song__box__autors__autor">Юность</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">Пусть в кайф asdfadfaffadfasdfasf</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">113:04</span>
+                        </div>
+                    </article>
+
+                    <article class="song">
+                        <div class="song__box">
+                            <span class="song__box__text">1</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <div>
+                                <img class="song__box__img" src="./images/playerAvatar" alt="">
+                            </div>
+                            <div class="song__box__title">
+                                <span class="song__box__text">Пусть в кайф afasdfafasfasfdads</span>
+                                <div class="song__box__autors">
+                                    <a class="song__box__autors__autor">Юность</a>
+                                    <a class="song__box__autors__autor">Юность</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">Пусть в кайф asdfadfaffadfasdfasf</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">113:04</span>
+                        </div>
+                    </article>
+
+                    <article class="song">
+                        <div class="song__box">
+                            <span class="song__box__text">1</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <div>
+                                <img class="song__box__img" src="./images/playerAvatar" alt="">
+                            </div>
+                            <div class="song__box__title">
+                                <span class="song__box__text">Пусть в кайф afasdfafasfasfdads</span>
+                                <div class="song__box__autors">
+                                    <a class="song__box__autors__autor">Юность</a>
+                                    <a class="song__box__autors__autor">Юность</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">Пусть в кайф asdfadfaffadfasdfasf</span>
+                        </div>
+                    
+                        <div class="song__box">
+                            <span class="song__box__text">113:04</span>
+                        </div>
+                    </article>
+                    
+                </section>
+            </main>
+
+            <footer class="player">
+                <div class="music-title">
+                    <img class="music-title__img" src="./images/playerAvatar" alt="Аватар трека">
+                    <div class="music-title__text">
+                        <span class="music-title__text__name">Крепко влип</span>
+                        <span class="music-title__text__autor">LUCAVEROS</span>
+                    </div>
+                </div>
+
+                <div class="player-control">
+                    <div class="player-control__buttons">
+                        <button class="player-control__buttons__button hover-effect">
+                            <img class="player-control__buttons__button__img" src="./images/footer/control/left.svg"
+                                alt="Предыдущая">
+                        </button>
+                        <button class="player-control__buttons__button hover-effect">
+                            <img class="player-control__buttons__button__img-big" src="./images/footer/control/play.svg"
+                                alt="Играть">
+                        </button>
+                        <button class="player-control__buttons__button hover-effect">
+                            <img class="player-control__buttons__button__img" src="./images/footer/control/right.svg"
+                                alt="Следующая">
+                        </button>
+                    </div>
+
+                    <div class="player-control__bar hover-effect">
+                        <span class="player-control__bar__time">00:00</span>
+                        <div class="progress-bar">
+                            <div class="progress-bar__progress"></div>
+                        </div>
+                        <span class="player-control__bar__time">00:00</span>
+                    </div>
+                </div>
+
+                <div class="sound hover-effect">
+                    <button class="sound__button">
+                        <img class="sound__button__img" src="./images/footer/saund/big.svg" alt="Звук">
+                    </button>
+
+                    <div class="sound__progress-bar ">
+                        <div class="sound__progress-bar__progress"></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

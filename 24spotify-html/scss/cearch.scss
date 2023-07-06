@@ -1,0 +1,38 @@
+.search-input {
+    background-color: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.the-best {
+    background-color: rgba(255, 255, 255, .05);
+    height: 220px;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    &__link {
+        padding: 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__box-img {
+        &__img {
+            height: 100px;
+        }
+    }
+    &__box-text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        &__name {
+            font-size: 28px;
+            font-weight: 700;
+        }
+    } 
+}

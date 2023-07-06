@@ -1,0 +1,67 @@
+.headline {
+    cursor: default;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.mixes {
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(max(300px, 30%), 1fr));
+    gap: 10px 20px;
+}
+
+.mix {
+    display: flex;
+    &__link {
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 80px;
+        background-color: rgba(255, 255, 255, .2);
+        border-radius: 10px;
+        flex: 1;
+    }
+    &__img {
+        border-radius: 10px 0 0 10px;
+        height: 100%;
+        width: 80px;
+    }
+    &__box-text {
+        &__text {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
+
+.recommendations {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.recommendation {
+    &__headline {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__header {
+            font-size: 28px;
+            font-weight: 600;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &__all {
+            font-size: 16px;
+            font-weight: 600;
+             &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
